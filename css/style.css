@@ -14,12 +14,11 @@
     letter-spacing: 1.5px;
 }
 header{
-    background-image: url(../img/bg-shape.png);
-    background-repeat: no-repeat;
-    background-size: 45rem;
-    background-position: right;
+    background: url(../img/bg-shape.png)no-repeat center right;
+    background-size: 55%;
     padding-bottom: 1rem;
 }
+/* Navbar */ 
 .navbar{
     padding: 1.5rem 5rem;
 }
@@ -35,7 +34,7 @@ header{
 .navbar-nav .nav-item a{
     color: #314584;
     font-size: 17px;
-    transition: .6s ease;
+    transition: .4s ease;
 }
 .navbar-nav .nav-item a.btn-u{
     background-color: #fff;
@@ -44,11 +43,14 @@ header{
     box-shadow: var(--shadow-color);
 }
 .navbar-nav .nav-item:hover a{
-    box-shadow: var(--shadow-color);
+    color: #ff3946;
+    background-color: transparent;
 }
 .navbar-nav .nav-item:hover a.btn-u{
-    background-color: rgba(241, 237, 237);
+    background-color: #ff3946;
+    color: #fff;
 }
+/* Hero Area */
 header .hero-img{
     padding: 1rem 0;
 }
@@ -65,29 +67,14 @@ header .hero-img{
     padding: 1rem 0;
 }
 .hero-img a{
-    padding: 1rem;
+    padding: .9rem;
     font: normal 600 18px/20px var(--worksans);
     text-decoration: none;
     text-transform: capitalize;
     transition: .6s ease;
 }
-.btn-1{
-    color: #fff;
-    background: #ff3946;
-    border-radius: 30px;
-}
-.btn-1:hover{
-    color: #314584;
-    background: #f1f1f1;
-}
-.not-btn{
-    color: #314584;
-}
-.not-btn:hover{
-    color: #fff;
-    background: #ff3946;
-    border-radius: 30px;
-}
+
+/* Service Area */
 .service-area{
     padding: 2rem 0;
 }
@@ -105,6 +92,9 @@ header .hero-img{
 .service-area .col-c{
     box-shadow: var(--shadow-color);
 }
+.service-area .col-c:hover{
+    filter: brightness(.75);
+}
 .service-area .row .img{
     padding: 5rem 0 0 .5rem;
 }
@@ -120,13 +110,13 @@ header .hero-img{
     padding: 0 3rem 0 .5rem;
     color: #314584;
 }
+/* About area */
  .about-area{
     padding: 1rem 0;
-    background-image: url(../img/bg-shape3.png);
-    background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 1rem;
-    background-size: 7rem;
+    background-image: url(../img/bg-shape2.png), url(../img/bg-shape3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 15rem, left 8rem;
+    background-size: 7%;
 }
 .about-area .img{
     position: relative;
@@ -139,10 +129,6 @@ header .hero-img{
 .about-area .text-area{
     padding: 1rem 0;
 }
-.about-area .text-area .company-title{
-    color: #ff3946;
-    font: normal 600 17px/19px var(--worksans);
-}
 .about-area .text-area h4.title{
     padding: 1rem 7rem .75rem 0;
 }
@@ -153,7 +139,12 @@ header .hero-img{
 .about-area i.fas{
     margin: 0 .5rem;
 }
+/* Portfolio */
 .portpolio-area{
+    background-image: url(../img/bg-shape2.png), url(../img/bg-shape3.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right -7.75rem, left -15rem;
+    background-size: 7%;
     position: relative;
     padding: 2rem 0 1rem 0;
 }
@@ -161,4 +152,70 @@ header .hero-img{
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+}
+.portpolio-area .row:first-child{
+    padding-bottom: 2rem;
+}
+.portpolio-area .row .img a>img{
+    padding: 1rem 0rem;
+    transition: .5s ease;
+}
+.portpolio-area .row .img:hover a>img{
+    transform: scale(1.05);
+    filter: brightness(.90);
+    box-shadow: var(--shadow-color);
+}
+.portpolio-area .row .text-center a{
+    color: #ff3946;
+    text-decoration: none;
+    padding: 1rem 0;
+    font: normal 600 18px/20px var(--worksans);
+    text-transform: capitalize;
+}
+.portpolio-area .row .text-center a:hover{
+    color: #314584;
+}
+/* Blog Area */ 
+.blog .row .icons{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.blog .row .icons .fas{
+    margin: 0 .5rem 0 0;
+}
+.blog .title-row{
+    padding: 1rem 0 0 0;
+}
+.blog .main-row .col-u{
+    padding-top: 2rem;
+    background: transparent;
+    transition: .6s ease;
+}
+.blog .main-row .col-u:hover{
+    background: #ff3946;
+}
+.blog .main-row .col-u:hover h6.title,
+.blog .main-row .col-u:hover .time,
+.blog .main-row .col-u:hover p.subt,
+.blog .main-row .col-u:hover i.fas{
+    color: #fff !important;
+}
+.blog .main-row h6.title{
+    font: normal 600 18px/20px var(--worksans);
+}
+.blog .main-row .time{
+    color: #6e757a;
+    font: normal 500 14px/16px var(--worksans);
+    padding: .5rem 0;
+}
+.blog .main-row p.subt{
+    color: #314584;
+    font: normal 500 18px/20px var(--worksans);
+    padding: 1.5rem 0 4rem ;
+}
+.blog .main-row i.fas{
+    position: absolute;
+    bottom: .5rem;
+    right: 2.5rem;
 }
