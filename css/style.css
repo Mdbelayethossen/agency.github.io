@@ -106,5 +106,59 @@ header .hero-img{
     box-shadow: var(--shadow-color);
 }
 .service-area .row .img{
-    padding: 5rem 0 0 1rem;
+    padding: 5rem 0 0 .5rem;
+}
+.service-area .row .content{
+    padding: 1rem 0;
+}
+.service-area .row  .content h5.title{
+    font: normal 600 25px/30px var(--worksans);
+    padding: .5rem 3rem 0 .5rem;
+}
+.service-area .row  .content p.subtitle{
+    font: normal 600 14px/20px var(--worksans);
+    padding: 0 3rem 0 .5rem;
+    color: #314584;
+}
+ .about-area{
+    padding: 1rem 0;
+    background-image: url(../img/bg-shape3.png);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 1rem;
+    background-size: 7rem;
+}
+.about-area .img{
+    position: relative;
+    top: 2rem;
+    left: -4rem;
+}
+.about-area .img>img{
+    width: 90%;
+}
+.about-area .text-area{
+    padding: 1rem 0;
+}
+.about-area .text-area .company-title{
+    color: #ff3946;
+    font: normal 600 17px/19px var(--worksans);
+}
+.about-area .text-area h4.title{
+    padding: 1rem 7rem .75rem 0;
+}
+.about-area .text-area p.subtitle{
+    color: #314584;
+    font: normal 500 18px/20px var(--worksans);
+}
+.about-area i.fas{
+    margin: 0 .5rem;
+}
+.portpolio-area{
+    position: relative;
+    padding: 2rem 0 1rem 0;
+}
+.portpolio-area .row .icons{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
