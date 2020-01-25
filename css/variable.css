@@ -1,3 +1,4 @@
 :root {
     --worksans: 'WorkSans', normal;
+    --shadow-color:  0px 10px 30px rgba(205, 200, 234, 0.3);
 }
